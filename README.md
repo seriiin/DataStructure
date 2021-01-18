@@ -8,3 +8,5 @@ This repo for Studying about DataStructure📒
 
 ✔️ [Binary Heap](https://lin-ing-link.tistory.com/152)
 
+✔️ [Hash]
+
