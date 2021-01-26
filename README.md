@@ -10,4 +10,4 @@ This repo for Studying about DataStructure📒
 
 ✔️ [Hash]
 
-✔️ [Graph] (https://lin-ing-link.tistory.com/166)
+✔️ [Graph](https://lin-ing-link.tistory.com/166)
