@@ -2,19 +2,23 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-bool re(int x, int y){
-    return x>y;
+
+bool cmp(string a, string b) {
+    return a+b > b+a;
 }
 string solution(vector<int> numbers) {
     string answer = "";
-    vector<string> numbers;
+    vector<string> tmp;
 
-    sort(numbers.begin(),numbers.end(),re);
+    for(int i=0;i<numbers.size();i++)
+        tmp.push_back(to_string(numbers[i]));
     
+    sort(tmp.begin(), tmp.end(), cmp);
     
-    
-    for(int i=0;i<numbers.size();i++){
-        answer+=to_string(numbers[i]);
-    }
+    if(tmp[0]=="0")
+        return "0";
+    else
+        for(int i=0;i<numbers.size();i++)
+            answer+=tmp[i];
     return answer;
-}
+}}
